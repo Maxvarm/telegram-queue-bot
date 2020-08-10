@@ -3,7 +3,7 @@
 venvpath="./venv";
 activatepath="$venvpath/bin/activate";
 if [ ! -f $activatepath ]; then 
-	python3 -m venv $activatepath;
+	python3 -m venv $venvpath;
 fi
 source $activatepath;
 pip3 install -r requirements.txt && clear;
